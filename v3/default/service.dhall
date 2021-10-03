@@ -1,4 +1,5 @@
 { volumes = None (List Text)
+, container_name = None Text
 , environment = None (List { mapKey : Text, mapValue : Text })
 , env_file = None (List Text)
 , restart = None Text

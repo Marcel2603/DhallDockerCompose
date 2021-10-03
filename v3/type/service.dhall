@@ -1,4 +1,5 @@
 { image : Text
+, container_name: Optional Text
 , volumes : Optional (List Text)
 , environment : Optional (List { mapKey : Text, mapValue : Text })
 , env_file: Optional (List Text)
