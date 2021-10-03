@@ -1,0 +1,8 @@
+services:
+  alpine:
+    command:
+    - env
+    environment:
+      TEST: test
+    image: "alpine:latest"
+version: '3.9'
