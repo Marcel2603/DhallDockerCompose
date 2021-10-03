@@ -1,8 +1,16 @@
 services:
   alpine:
     command:
-    - env
+    - sleep
+    - '20'
     environment:
       TEST: ter
+    healthcheck:
+      interval: 10s
+      retries: 5
+      test:
+      - echo
+      - test
+      timeout: 5s
     image: "alpine:latest"
 version: '3.9'
