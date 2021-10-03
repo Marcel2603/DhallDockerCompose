@@ -8,4 +8,5 @@
 , build : Optional Text
 , command : Optional (List Text)
 , labels: Optional (List Text)
+, healthcheck: Optional ./health_check.dhall
 }

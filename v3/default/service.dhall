@@ -7,4 +7,5 @@
 , build = None Text
 , command = None (List Text)
 , labels = None (List Text)
+, healthcheck = None
 }
