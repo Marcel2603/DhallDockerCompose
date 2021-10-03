@@ -3,6 +3,6 @@ services:
     command:
     - env
     environment:
-      TEST: test
+      TEST: ter
     image: "alpine:latest"
 version: '3.9'
