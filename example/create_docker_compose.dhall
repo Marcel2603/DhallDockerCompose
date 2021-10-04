@@ -1,10 +1,10 @@
 let package =
       https://raw.githubusercontent.com/Marcel2603/DhallDockerCompose/master/package.dhall
-        sha256:a5c9b86dc83e2faa022825edd1158e504805ab0a0a1840e6ff33ad2f55acf30b
+        sha256:627f180db381580b0a48dace83fca6ed2703e640b717c1dd4261d95827fe2ded
 
 let alpine_service =
       package.service::{
-      , image = "alpine:latest"
+      , image = Some "alpine:latest"
       , environment = Some (toMap { TEST = "ter" })
       , command = Some [ "sleep", "20" ]
       , healthcheck = Some package.health_check::{ test = [ "echo", "test" ] }
@@ -12,7 +12,7 @@ let alpine_service =
 
 let postgres-service =
       package.service::{
-      , image = "postgres:9.5"
+      , image = Some "postgres:9.5"
       , container_name = Some "postgres"
       , environment = Some
           ( toMap
