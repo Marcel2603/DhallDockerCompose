@@ -5,14 +5,14 @@ let package = ./../package.dhall
 
 let alpine_service =
       package.service::{
-      , image = "alpine:latest"
+      , image = Some "alpine:latest"
       , environment = Some (toMap { TEST = "ter" })
       , command = Some [ "sleep", "20" ]
       }
 
 let postgres-service =
       package.service::{
-      , image = "postgres:9.5"
+      , image = Some "postgres:9.5"
       , container_name = Some "postgres"
       , environment = Some
           ( toMap
