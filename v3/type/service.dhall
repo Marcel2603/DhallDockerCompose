@@ -7,7 +7,8 @@
 , depends_on : Optional (List Text)
 , ports : Optional (List Text)
 , build : Optional ./build.dhall
-, command : Optional (List Text)
+, command : Optional ./text_or_list.dhall
 , labels : Optional (List Text)
 , healthcheck : Optional ./health_check.dhall
+, networks: Optional ./networks.dhall
 }
