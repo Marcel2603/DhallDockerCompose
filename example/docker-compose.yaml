@@ -1,10 +1,13 @@
 services:
   alpine:
-    command:
-    - sleep
-    - '20'
+    command: sleep 20
     environment:
       TEST: ter
+    healthcheck:
+      interval: 10s
+      retries: 5
+      test: echo Test
+      timeout: 5s
     image: "alpine:latest"
   postgres:
     container_name: postgres
