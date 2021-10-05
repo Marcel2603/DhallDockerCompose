@@ -5,13 +5,6 @@ services:
     - '20'
     environment:
       TEST: ter
-    healthcheck:
-      interval: 10s
-      retries: 5
-      test:
-      - echo
-      - test
-      timeout: 5s
     image: "alpine:latest"
   postgres:
     container_name: postgres
@@ -19,12 +12,5 @@ services:
       POSTGRES_DB: user
       POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_USER: user
-    healthcheck:
-      interval: 10s
-      retries: 5
-      test:
-      - "CMD-SHELL"
-      - pg_isready
-      timeout: 5s
     image: "postgres:9.5"
 version: '3.9'

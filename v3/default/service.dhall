@@ -5,8 +5,8 @@
 , restart = None Text
 , depends_on = None (List Text)
 , ports = None (List Text)
-, build = None Text
+, build = None ./../type/build.dhall
 , command = None (List Text)
 , labels = None (List Text)
-, healthcheck = None
+, healthcheck = None ./../type/health_check.dhall
 }
