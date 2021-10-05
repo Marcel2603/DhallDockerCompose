@@ -10,5 +10,5 @@
 , command : Optional ./text_or_list.dhall
 , labels : Optional (List Text)
 , healthcheck : Optional ./health_check.dhall
-, networks: Optional ./networks.dhall
+, networks : Optional ./networks.dhall
 }

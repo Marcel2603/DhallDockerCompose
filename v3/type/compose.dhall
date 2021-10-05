@@ -1,4 +1,3 @@
-{
-    version: Text
-    , services: Optional (List { mapKey : Text, mapValue : ./service.dhall })
+{ version : Text
+, services : Optional (List { mapKey : Text, mapValue : ./service.dhall })
 }

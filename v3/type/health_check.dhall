@@ -1,1 +1,5 @@
-{ test : ./text_or_list.dhall, interval : Text, timeout : Text, retries : Integer }
+{ test : ./text_or_list.dhall
+, interval : Text
+, timeout : Text
+, retries : Integer
+}
