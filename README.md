@@ -2,7 +2,7 @@
 
 > `dhall-docker-compose` contains Dhall bindings to docker-compose. WIth the help of this lib, you can create a complete docker-compose with dhall.
 
-# Why?ß?
+# Why?
 
 Once you build a slightly big docker-compose setup, with many lines of code, you'll encounter several issues:
 
