@@ -1,6 +1,6 @@
-let package =
-      https://raw.githubusercontent.com/Marcel2603/DhallDockerCompose/master/package.dhall
-        sha256:bba7d8d4fbfd1be3a757988d20889a4ea09478fb7c2762a04a1e883a8e1bf8f8
+-- let package =
+--       https://raw.githubusercontent.com/Marcel2603/DhallDockerCompose/master/package.dhall
+let package = ./../package.dhall
 
 let alpine_service =
       package.service::{

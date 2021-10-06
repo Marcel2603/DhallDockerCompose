@@ -6,7 +6,7 @@
 , restart : Optional Text
 , depends_on : Optional (List Text)
 , ports : Optional (List Text)
-, build : Optional ./build.dhall
+, build : Optional ./text_or_build.dhall
 , command : Optional ./text_or_list.dhall
 , labels : Optional (List Text)
 , healthcheck : Optional ./health_check.dhall

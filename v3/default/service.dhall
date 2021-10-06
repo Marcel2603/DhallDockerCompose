@@ -6,7 +6,7 @@
 , restart = None Text
 , depends_on = None (List Text)
 , ports = None (List Text)
-, build = None ./../type/build.dhall
+, build = None ./../type/text_or_build.dhall
 , command = None ./../type/text_or_list.dhall
 , labels = None (List Text)
 , healthcheck = None ./../type/health_check.dhall
