@@ -1,1 +1,1 @@
-< List : List Text | Networks : List { key : Text, value : ./network.dhall } >
+< List : List Text | Networks : List { mapKey : Text, mapValue : ./network.dhall } >
