@@ -1,1 +1,1 @@
-{ interval = "10s", timeout = "5s", retries = +5 }
+{ interval = "10s", timeout = "5s", retries = 5 }

@@ -16,6 +16,4 @@ services:
       POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_USER: user
     image: "postgres:9.5"
-  "test-service":
-    build: '.'
 version: '3.9'
