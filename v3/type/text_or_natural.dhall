@@ -1,0 +1,1 @@
+< Text : Text | Natural : Natural >

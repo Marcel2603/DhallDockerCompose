@@ -6,4 +6,5 @@
 , text_or_list = ./type/text_or_list.dhall
 , networks = ./type/networks.dhall
 , text_or_build = ./type/text_or_build.dhall
+, text_or_natural = ./type/text_or_natural.dhall
 }
