@@ -12,4 +12,5 @@
 , healthcheck : Optional ./health_check.dhall
 , networks : Optional ./networks.dhall
 , dns : Optional ./text_or_list.dhall
+, network_mode: Optional Text
 }
