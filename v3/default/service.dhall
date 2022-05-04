@@ -11,4 +11,5 @@
 , labels = None (List Text)
 , healthcheck = None ./../type/health_check.dhall
 , networks = None ./../type/networks.dhall
+, entrypoint = None ./../type/text_or_list.dhall
 }
