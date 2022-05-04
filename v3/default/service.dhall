@@ -11,4 +11,6 @@
 , labels = None (List Text)
 , healthcheck = None ./../type/health_check.dhall
 , networks = None ./../type/networks.dhall
+, dns = None ./../type/text_or_list.dhall
+, network_mode = None Text
 }
